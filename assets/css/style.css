@@ -1,0 +1,316 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('assets/fonts/Raleway-BoldItalic.woff2') format('woff2'),
+        url('assets/fonts/Raleway-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('assets/fonts/Raleway-Black.woff2') format('woff2'),
+        url('assets/fonts/Raleway-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('assets/fonts/Raleway-BlackItalic.woff2') format('woff2'),
+        url('assets/fonts/Raleway-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('assets/fonts/Raleway-Italic.woff2') format('woff2'),
+        url('assets/fonts/Raleway-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('assets/fonts/Raleway-Bold.woff2') format('woff2'),
+        url('assets/fonts/Raleway-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Abril Fatface';
+    src: url('assets/fonts/AbrilFatface-Regular.woff2') format('woff2'),
+        url('assets/fonts/AbrilFatface-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* MAIN */
+
+:root {
+	--main-blue: #5d59f9;
+	--main-white: #f4f4f4;
+	--dark-blue: #27253e;
+	--darkest: #211f32;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: normal;
+	color: var(--main-white);
+	background: var(--dark-blue);
+}
+
+/* HEADER */
+
+.header {
+	background-image: url('../images/bg_header.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.top-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 960px;
+	padding-top: 20px;
+	margin: 0 auto;
+}
+
+.icon {
+	width: 20px;
+	height: auto;
+	padding: 8px;
+	background: var(--main-white);
+}
+
+.icon:hover {
+	background: rgba(22,22,22,0.3);
+}
+
+.main-hero {
+	display: flex;
+	justify-content: space-between;
+	max-width: 960px;
+	padding-top: 40px;
+	margin: 0 auto;
+}
+
+.main-copy h1 {
+	font-family: 'Abril Fatface', serif;
+	font-size: 4.8rem;
+	line-height: 1;
+}
+
+.main-copy h3 {
+	line-height: 0.2;
+}
+
+.nav-buttons {
+	margin-top: 100px;
+}
+
+.buttons {
+	background: none;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: var(--main-white);
+	border: 4px solid var(--main-blue);
+	padding: 30px 10px;
+	margin: 0 5px;
+}
+
+.buttons:hover {
+	color: var(--main-white);
+	background: var(--main-blue); 
+}
+
+.hero-img {
+	width: 100%;
+	height: auto;
+	z-index: 1;
+}
+
+/* Seção: About */
+
+.section-about {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	max-width: 960px;
+	padding-top: 40px;
+	margin: 0 auto;
+}
+
+.about-img:hover,
+.images img:hover {
+	transition: 200ms ease-in-out;
+	transform: scale(1.01);
+}
+
+.about-box {
+	background: var(--darkest);
+	width: 300px;
+	height: auto;
+	padding: 20px;
+	text-align: justify;
+}
+
+.about-box h3,
+.section-portfolio h3,
+.section-contact h3 {
+	font-family: 'Abril Fatface', serif;
+	color: var(--main-blue);
+	text-align: center;
+	font-size: 2rem;
+	line-height: 1;
+}
+
+.about-box h3 {
+	padding-bottom: 15px;
+	border-bottom: 2px solid var(--main-white);
+}
+
+.center-button {
+	display: flex;
+	justify-content: center;
+}
+
+/* Seção: Portfólio */
+
+.section-portfolio {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	max-width: 960px;
+	padding-top: 40px;
+	margin: 0 auto;
+}
+
+.section-portfolio h3 {
+	font-size: 3rem;
+}
+
+.images {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+
+.images img {
+	flex: 1;
+	padding: 4px;
+}
+
+.images .grid {
+	flex: 2;
+}
+
+/* Seção: Horário */
+
+.section-contact {
+	max-width: 960px;
+	padding-top: 60px;
+	margin: 0 auto;
+}
+
+.section-contact h3 {
+	text-align: right;
+	padding-bottom: 15px;
+	border-bottom: 2px solid var(--main-white);
+}
+
+form {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.form-row {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+}
+
+.form-row label {
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.form-row input,
+.form-row select {
+	border: none;
+	border-radius: 5px;
+	padding: 10px 6px;
+	margin-bottom: 10px;
+	background: var(--darkest);
+	color: var(--main-white);
+}
+
+.form-row select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+	background-repeat: no-repeat;
+	background-position-x: 95%;
+	background-position-y: 7px;
+}
+
+/* Rodapé */
+
+footer {
+	margin: 0;
+	padding-top: 120px;
+	padding-bottom: 60px;
+
+	background-image: url('../images/bg_footer.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+}
+
+.footer-row {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	max-width: 960px;
+	padding-top: 20px;
+	margin: 0 auto;
+
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.footer-row:first-child {
+	align-items: flex-start;
+}
+
+.footer-row:last-child {
+	align-items: flex-end;
+}
+
+.footer-row p {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.footer-row ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
